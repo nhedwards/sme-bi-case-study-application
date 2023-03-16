@@ -44,7 +44,7 @@ What is the max bid for loan id 5021364? Round your answer to the nearest 100th 
 
 #### End goal:
 
-[Screenshot 2023-03-15 at 9 39 40 PM](https://user-images.githubusercontent.com/107631815/225487671-66530dd2-cae8-467b-8488-0619508558fb.png)
+![Screenshot 2023-03-15 at 9 39 40 PM](https://user-images.githubusercontent.com/107631815/225487671-66530dd2-cae8-467b-8488-0619508558fb.png)
 
 ## Finalized Workbook
 
