@@ -18,28 +18,33 @@
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+Use Power Query Editor to unpivot the data into a table that simply shows the loan id, winning bid, and winning counterparty. Then transform the data in a way to find the top bid and bidder for each loan.
+
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
-You can look at the same [exercise]([url](https://campus.datacamp.com/courses/case-study-analyzing-customer-churn-in-tableau/exploratory-analysis-1?ex=4)) from the Case Study: Analyzing Customer Churn in Tableau on how to write a good context.
+The trade is on! You’ve sent the data tape out, and now you’re getting prices back from each counterparty. You need to be able to figure out who placed the highest offer on each mortgage loan so you know who you will trade it to. Luckily, this can be done within a few steps in Power Query Editor.
+
 
 #### Steps to be executed by the student (max 6)
 
-*Each bulleted instruction is a complete sentence that describes a specific task.*
+1. Upload loan_bids.xlsx into Power BI from the Datasets folder on the desktop.
+2. Open the Power Query Editor and unpivot each counterparty so that there are only three columns: Loan ID, Price, and Bidder. Rename them accordingly.
+3. In the Power Query Editor, click Group By and group the rows by loan id, and create a new column called “max price” that finds the max of price, and another column that includes all rows called “All bids”
+4. Add a column within the Power Query Editor with this formula: Table.Max([All bids], "Price"
+5. Expand the custom column and just include the counterparty.
+6. Click close and apply. Double-check the relationship between loan_bids and loan_data is linked on loan_id on a one-to-one relationship.
+7. Add a table that displays all the data with loan_id as the first field, and give it a title, “Loan-level data”.
 
-- Step 1
-- Step 2
-- Step 3
-- ...
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+What is the max bid for loan id 5021364? Round your answer to the nearest 100th (i.e. 100.00).
+100.89.
+
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+[Screenshot 2023-03-15 at 9 39 40 PM](https://user-images.githubusercontent.com/107631815/225487671-66530dd2-cae8-467b-8488-0619508558fb.png)
 
 ## Finalized Workbook
 
@@ -47,8 +52,9 @@ You can look at the same [exercise]([url](https://campus.datacamp.com/courses/ca
 You can upload your final workbook in the exercises folder as `ex-final-sol.twbx` or `ex-final-sol.pbix`.
 
 #### Explanation & Description
-Which answers will the learner be able to solve once building this? How does it fit in the bigger picture?
+This is the first exercise in chapter two. The learner will use steps in the Power Query Editor to organize the bids in an effective way to pool mortgages to the highest bidders in order to maximize trade proceeds.
+
+This exercise is foundational to the rest of the course. Without properly identifying the winning bids and prices, we cannot create mortage pools or perform financial analysis on the profit earned from trading.
 
 #### End goal:
-
-*Add an image of the final visualization here.*
+![Screenshot 2023-03-15 at 9 44 44 PM](https://user-images.githubusercontent.com/107631815/225488311-b965c3ab-2b98-4216-818c-28a02b9d2b69.png)
