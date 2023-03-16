@@ -54,7 +54,7 @@ You can upload your final workbook in the exercises folder as `ex-final-sol.twbx
 #### Explanation & Description
 This is the first exercise in chapter two. The learner will use steps in the Power Query Editor to organize the bids in an effective way to pool mortgages to the highest bidders in order to maximize trade proceeds.
 
-This exercise is foundational to the rest of the course. Without properly identifying the winning bids and prices, we cannot create mortage pools or perform financial analysis on the profit earned from trading.
+This exercise is foundational to the rest of the course. Without properly identifying the winning bids and prices, we cannot create mortage pools, which are the way the mortgages are grouped and sold to buyers, or perform financial analysis on the profit earned from trading.
 
 #### End goal:
 ![Screenshot 2023-03-15 at 9 44 44 PM](https://user-images.githubusercontent.com/107631815/225488311-b965c3ab-2b98-4216-818c-28a02b9d2b69.png)
