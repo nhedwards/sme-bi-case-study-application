@@ -9,12 +9,12 @@
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix`
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix`
 
 #### Learning Objective
 
@@ -23,15 +23,15 @@ Use Power Query Editor to unpivot the data into a table that simply shows the lo
 
 #### Context
 
-The trade is on! You’ve sent the data tape out, and now you’re getting prices back from each counterparty. You need to be able to figure out who placed the highest offer on each mortgage loan so you know who you will trade it to. Luckily, this can be done within a few steps in Power Query Editor.
+The trade is on! You’ve sent the data tape out, and now you’re getting prices back from each counterparty. You need to be able to figure out who placed the highest offer on each mortgage loan so you know who you will trade it to. This can be done simply with a few steps in Power Query Editor.
 
 
 #### Steps to be executed by the student (max 6)
 
 1. Upload loan_bids.xlsx into Power BI from the Datasets folder on the desktop.
-2. Open the Power Query Editor and unpivot each counterparty so that there are only three columns: Loan ID, Price, and Bidder. Rename them accordingly.
+2. Open the Power Query Editor and unpivot each counterparty so that there are only three columns: loan_id, price, and bidder. Rename them accordingly.
 3. In the Power Query Editor, click Group By and group the rows by loan id, and create a new column called “max price” that finds the max of price, and another column that includes all rows called “All bids”
-4. Add a column within the Power Query Editor with this formula: Table.Max([All bids], "Price"
+4. Add a column within the Power Query Editor with this formula: Table.Max([All bids], "price"
 5. Expand the custom column and just include the counterparty.
 6. Click close and apply. Double-check the relationship between loan_bids and loan_data is linked on loan_id on a one-to-one relationship.
 7. Add a table that displays all the data with loan_id as the first field, and give it a title, “Loan-level data”.
